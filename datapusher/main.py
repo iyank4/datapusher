@@ -26,7 +26,7 @@ def main():
         epilog='''"He reached out and pressed an invitingly large red button on a nearby panel.
                 The panel lit up with the words Please do not press this button again."''')
 
-    argparser.add_argument('config', metavar='CONFIG', type=file,
+    argparser.add_argument('config', metavar='CONFIG', type=open,
                            help='configuration file')
     args = argparser.parse_args()
 
