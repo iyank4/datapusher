@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "datapusher"
+version = "0.0.16"
+description = "DataPusher is a standalone web service that automatically downloads any CSV or XLS (Excel) data files from a CKAN site's resources when they are added to the CKAN site, parses them to pull out the actual data, then uses the DataStore API to push the data into the CKAN site's DataStore."
+authors = ["CKAN <see@ckan.org>"]
+license = "AGPL-3.0-only"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+argparse = "^1.4.0"
+ckanserviceprovider = "^0.0.10"
+messytables = "^0.15.2"
+pyOpenSSL = "^19.1.0"
+idna = "^2.9"
+cryptography = "^2.9.2"
+
+[tool.poetry.dev-dependencies]
+nose = "^1.3.7"
+httpretty = "^0.9.4"
+Sphinx = "^1.2.3"
+sphinx_rtd_theme = "^0.4.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+test = "nose:run_exit"
+dp = "datapusher.main:main"
