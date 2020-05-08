@@ -1,3 +1,16 @@
+# My Changes branch
+
+This is my jouney of learning python.
+
+
+## Using pyenv and poetry
+
+Using pyenv installed from homebrew, and manual installation of poetry on osx, since poetry from homebrew locked to system python version.
+- [Poetry init](https://github.com/iyank4/datapusher/commit/4f3bdd9220a40a1a20c8a34b0de373a47ee799f5)
+- [Fix 'file' is not defined for py3](https://github.com/iyank4/datapusher/commit/b52c63202d8320a0aef6e0919bbea40bf69d1c9f)
+
+---
+
 [![Build Status](https://travis-ci.org/ckan/datapusher.png?branch=master)](https://travis-ci.org/ckan/datapusher)
 [![Coverage Status](https://coveralls.io/repos/ckan/datapusher/badge.png?branch=master)](https://coveralls.io/r/ckan/datapusher?branch=master)
 [![Latest Version](https://img.shields.io/pypi/v/datapusher.svg)](https://pypi.python.org/pypi/datapusher/)
