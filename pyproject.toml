@@ -25,5 +25,4 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry.scripts]
-test = "nose:run_exit"
-dp = "datapusher.main:main"
+datapusher = "datapusher.main:main"
